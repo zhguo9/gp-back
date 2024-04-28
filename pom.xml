@@ -81,7 +81,7 @@
                 <version>${spring-boot.version}</version>
                 <configuration>
                     <mainClass>com.example.demo.Demo1Application</mainClass>
-                    <skip>true</skip>
+                    <fork>true</fork>
                 </configuration>
                 <executions>
                     <execution>

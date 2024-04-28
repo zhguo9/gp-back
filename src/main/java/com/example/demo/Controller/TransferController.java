@@ -11,13 +11,13 @@ import java.io.InputStreamReader;
 @RestController
 @CrossOrigin(origins = {"*"})
 @RequestMapping("/api")
-public class ReceiveCommandController {
+public class TransferController {
     @Value("${python.explainer.path}")
     private String pythonExpalinerPath;
 
-    @Value("${python.pretrain-script.path}")
+    @Value("${python.transfer-script.path}")
     private String pythonScriptPath;
-//    @PostMapping("/process")
+    @PostMapping("/process")
     public String processFile(@RequestParam String fileName) {
         System.out.println("file " + fileName + "  processed ~ ");
         // 在这里执行分词指令
@@ -26,7 +26,9 @@ public class ReceiveCommandController {
         // 你可以注入 FileProcessor，并调用它的方法来处理文件
         // 示例中直接返回处理结果字符串
         try {
-            ProcessBuilder processBuilder = new ProcessBuilder(pythonExpalinerPath, pythonScriptPath);
+            ProcessBuilder processBuilder = new ProcessBuilder(pythonExpalinerPath,
+                    pythonScriptPath,
+                    "fna_path=" + fileName);
             processBuilder.directory(new File("C:\\Users\\silence\\Desktop"));
             Process process = processBuilder.start();
 

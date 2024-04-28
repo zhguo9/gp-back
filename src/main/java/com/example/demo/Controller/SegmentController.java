@@ -25,7 +25,7 @@ public class SegmentController {
 
         try {
             ProcessBuilder processBuilder = new ProcessBuilder(pythonExpalinerPath, pythonScriptPath);
-            processBuilder.directory(new File("path/to/your/python/script"));
+            processBuilder.directory(new File("C:\\Users\\silence\\Desktop"));
             Process process = processBuilder.start();
 
             // 从Python脚本的输出流读取数据

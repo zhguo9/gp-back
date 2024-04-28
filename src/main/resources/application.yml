@@ -12,7 +12,9 @@ spring:
 python:
   explainer:
     path: "C:\\Users\\silence\\miniconda3\\envs\\torch_1_13_1\\python.exe"
-  script:
+  pretrain-script:
     path: "C:\\Users\\silence\\Desktop\\test.py"
+  transfer-script:
+    path: "C:\\Guo\\Git\\transfer-dna\\predict1.py"
 file:
   storagePath: "C:\\Users\\silence\\Desktop\\Files"
