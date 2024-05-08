@@ -11,25 +11,24 @@ import java.io.InputStreamReader;
 @RestController
 @CrossOrigin(origins = {"*"})
 @RequestMapping("/api")
-public class TransferController {
-    @Value("${python.explainer.path}")
+public class GetOriginal1Controller {
+    @Value("${python.pretrain-explainer.path}")
     private String pythonExpalinerPath;
 
-    @Value("${python.transfer-script.path}")
+    @Value("${python.pretrain-script.get-original-path}")
     private String pythonScriptPath;
-    @PostMapping("/process")
+    @PostMapping("/getoriginal1")
     public String processFile(@RequestParam String fileName) {
-        System.out.println("file " + fileName + "  processed ~ ");
         // 在这里执行分词指令
         // 这里仅做演示，实际应用中需要根据你的需求调用相应的服务或工具进行文件处理
         // 假设你有一个名为 FileProcessor 的服务类用于处理文件
         // 你可以注入 FileProcessor，并调用它的方法来处理文件
         // 示例中直接返回处理结果字符串
         try {
+            System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
             ProcessBuilder processBuilder = new ProcessBuilder(pythonExpalinerPath,
-                    pythonScriptPath,
-                    "fna_path=C:\\Users\\silence\\Desktop\\Files\\" + fileName);
-            processBuilder.directory(new File("C:\\Users\\silence\\Desktop"));
+                    pythonScriptPath);
+            processBuilder.directory(new File("C:\\Guo\\Git\\hyena-dna\\"));
             Process process = processBuilder.start();
 
             // 从Python脚本的输出流读取数据

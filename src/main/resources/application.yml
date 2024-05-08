@@ -12,9 +12,13 @@ spring:
 python:
   explainer:
     path: "C:\\Users\\silence\\miniconda3\\envs\\torch_1_13_1\\python.exe"
+  pretrain-explainer:
+    path: "C:\\Users\\silence\\miniconda3\\envs\\hyena-dna\\python.exe"
   pretrain-script:
-    path: "C:\\Users\\silence\\Desktop\\test.py"
+    path: "C:\\Guo\\Git\\hyena-dna\\train.py"
+    get-original-path: "C:\\Guo\\Git\\hyena-dna\\getoriginal.py"
   transfer-script:
     path: "C:\\Guo\\Git\\transfer-dna\\predict1.py"
+    get-original-path: "C:\\Guo\\Git\\transfer-dna\\getoriginal.py"
 file:
   storagePath: "C:\\Users\\silence\\Desktop\\Files"
