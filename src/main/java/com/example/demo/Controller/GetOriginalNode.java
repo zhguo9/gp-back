@@ -29,7 +29,7 @@ public class GetOriginalNode {
             ProcessBuilder processBuilder = new ProcessBuilder(pythonExpalinerPath,
                     pythonScriptPath,
                     "fna_path=C:\\Guo\\Git\\gp-back\\src\\main\\resources\\Files\\" + fileName);
-            processBuilder.directory(new File("C:\\Users\\silence\\Desktop"));
+            processBuilder.directory(new File("C:\\Guo\\Git\\transfer-dna"));
             Process process = processBuilder.start();
 
             // 从Python脚本的输出流读取数据
