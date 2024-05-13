@@ -21,4 +21,4 @@ python:
     path: "C:\\Guo\\Git\\transfer-dna\\predict1.py"
     get-original-path: "C:\\Guo\\Git\\transfer-dna\\getoriginal.py"
 file:
-  storagePath: "C:\\Users\\silence\\Desktop\\Files"
+  fnaPath: "C:\Guo\Git\gp-back\src\main\resources\Files"

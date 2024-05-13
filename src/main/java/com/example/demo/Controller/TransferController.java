@@ -28,8 +28,8 @@ public class TransferController {
         try {
             ProcessBuilder processBuilder = new ProcessBuilder(pythonExpalinerPath,
                     pythonScriptPath,
-                    "fna_path=C:\\Users\\silence\\Desktop\\Files\\" + fileName);
-            processBuilder.directory(new File("C:\\Users\\silence\\Desktop"));
+                    "fna_path=C:\\Guo\\Git\\gp-back\\src\\main\\resources\\Files" + fileName);
+            processBuilder.directory(new File("C:\\Guo\\Git\\transfer-dna"));
             Process process = processBuilder.start();
 
             // 从Python脚本的输出流读取数据

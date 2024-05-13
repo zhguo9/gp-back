@@ -15,7 +15,7 @@ public class ShowFileListController {
     @GetMapping("/files")
     public List<String> getFileList() {
         List<String> fileList = new ArrayList<>();
-        File folder = new File("C:\\Users\\silence\\Desktop\\Files"); // 请替换为你要读取的文件夹路径
+        File folder = new File("C:\\Guo\\Git\\gp-back\\src\\main\\resources\\Files"); // 请替换为你要读取的文件夹路径
 
         if (folder.exists() && folder.isDirectory()) {
             File[] files = folder.listFiles();

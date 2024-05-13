@@ -10,7 +10,7 @@ import java.io.IOException;
 @RequestMapping("/api")
 public class FileUploadController {
 
-    private static final String UPLOAD_DIR = "C:\\Users\\silence\\Desktop\\Files"; // 修改为你想要保存文件的路径
+    private static final String UPLOAD_DIR = "C:\\Guo\\Git\\gp-back\\src\\main\\resources\\Files"; // 修改为你想要保存文件的路径
 
     @PostMapping("/upload")
     public String uploadFile(@RequestParam("file") MultipartFile file) {

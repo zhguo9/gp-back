@@ -33,7 +33,7 @@ public class PreTrainController {
                     "train.pretrained_model_path=C:\\Guo\\Git\\hyena-dna\\outputs\\2024-05-08\\10-13-52-935062\\checkpoints\\last.ckpt",
                     "model.fused_dropout_add_ln=False",
                     "train.validate_at_start=1",
-                    "fna_path=C:\\Users\\silence\\Desktop\\Files\\" + fileName);
+                    "fna_path=C:\\Guo\\Git\\gp-back\\src\\main\\resources\\Files" + fileName);
             processBuilder.directory(new File("C:\\Guo\\Git\\hyena-dna\\"));
             Process process = processBuilder.start();
 

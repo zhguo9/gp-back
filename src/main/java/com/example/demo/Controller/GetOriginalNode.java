@@ -28,7 +28,7 @@ public class GetOriginalNode {
             System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
             ProcessBuilder processBuilder = new ProcessBuilder(pythonExpalinerPath,
                     pythonScriptPath,
-                    "fna_path=C:\\Users\\silence\\Desktop\\Files\\" + fileName);
+                    "fna_path=C:\\Guo\\Git\\gp-back\\src\\main\\resources\\Files\\" + fileName);
             processBuilder.directory(new File("C:\\Users\\silence\\Desktop"));
             Process process = processBuilder.start();
 
